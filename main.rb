@@ -36,10 +36,10 @@ Class MAIN
         case choice
             when 1
                 puts 'Enter a git command'.colorize(:green)
-                puts_git(gets.strip)
+                Git.puts_git(gets.strip)
                 menu
             when 2
-                exit
+                Git.config
             else
                 puts 'Inavlid Choice'.colorize(:red)
                 menu
